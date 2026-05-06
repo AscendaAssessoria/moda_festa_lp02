@@ -1,0 +1,12 @@
+{
+  "name": "moda-festa-lp",
+  "version": "1.0.0",
+  "description": "Landing Page Ascenda Assessoria",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static HTML project - no build required'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
