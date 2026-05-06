@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <span class="logo-text">ASCENDA</span>
+                <img src="assets/logo.png" alt="Ascenda Assessoria" class="logo-img">
             </div>
             <nav class="nav">
                 <a href="#metodologia" class="nav-link">Metodologia</a>
@@ -119,7 +119,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-col">
-                <span class="logo-text">ASCENDA</span>
+                <img src="assets/logo.png" alt="Ascenda Assessoria" class="logo-img footer-logo">
                 <p>Assessoria especializada em tráfego pago para lojas de Moda Festa e Noivas.</p>
             </div>
             <div class="footer-col text-right">
@@ -145,14 +145,48 @@
                     <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
                 </div>
                 <div class="form-group">
-                    <label for="revenue">Faturamento Médio Mensal</label>
-                    <select id="revenue" name="revenue" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="instagram">@ do Instagram da empresa</label>
+                    <input type="text" id="instagram" name="instagram" required placeholder="@suaempresa">
+                </div>
+                <div class="form-group">
+                    <label for="investimento">Quanto investe por mês em anúncios?</label>
+                    <select id="investimento" name="investimento" required>
                         <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="Ate 50k">Até R$ 50.000</option>
-                        <option value="50k a 100k">R$ 50.000 a R$ 100.000</option>
-                        <option value="Acima de 100k">Acima de R$ 100.000</option>
+                        <option value="Nao invisto">Não invisto</option>
+                        <option value="Ate mil reais">Até mil reais</option>
+                        <option value="De mil a 3 mil reais">De mil a 3 mil reais</option>
+                        <option value="Mais que 3 mil">Mais que 3 mil</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="revenue">Qual é o faturamento mensal médio da sua loja?</label>
+                    <select id="revenue" name="revenue" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Ate 30 mil">Até 30 mil</option>
+                        <option value="De 30 mil a 50 mil">De 30 mil a 50 mil</option>
+                        <option value="De 50 mil a 100 mil">De 50 mil a 100 mil</option>
+                        <option value="Acima de 100 mil">Acima de 100 mil</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estagio">Hoje, em qual estágio você considera que sua loja está?</label>
+                    <select id="estagio" name="estagio" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Loja começando e não tenho clientes">Loja começando e não tenho clientes</option>
+                        <option value="Tenho poucos clientes e a maioria por indicação">Tenho poucos clientes e a maioria por indicação</option>
+                        <option value="Meu marketing já funciona e me traz cliente, agora preciso aumentar o volume">Meu marketing já funciona e me traz cliente, agora preciso aumentar o volume</option>
+                    </select>
+                </div>
+                
+                <input type="hidden" id="utm_source" name="utm_source" value="">
+                <input type="hidden" id="utm_medium" name="utm_medium" value="">
+                <input type="hidden" id="utm_campaign" name="utm_campaign" value="">
+                <input type="hidden" id="utm_content" name="utm_content" value="">
+
                 <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
                     <span class="btn-text">Agendar Agora</span>
                     <span class="spinner" style="display:none;">↻</span>
