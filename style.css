@@ -425,7 +425,9 @@ span {
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    overflow-y: auto;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -444,8 +446,7 @@ span {
     border: 1px solid var(--primary-color);
     width: 100%;
     max-width: 500px;
-    max-height: 90vh;
-    overflow-y: auto;
+    margin: auto;
     position: relative;
     transform: translateY(20px);
     transition: var(--transition);
