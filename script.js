@@ -55,18 +55,8 @@ leadForm.addEventListener('submit', async function(e) {
         btnText.textContent = 'Sucesso! Redirecionando...';
         spinner.style.display = 'none';
         
-        // Redirect to WhatsApp logic
-        const waText = `Olá! Meu nome é ${data.name}, o faturamento da minha loja é ${data.revenue} e gostaria de uma avaliação para escalar meus resultados.`;
-        const waNumber = "5511999999999"; // Substituir pelo número real
-        const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`;
-        
         setTimeout(() => {
-            window.open(waLink, '_blank'); // Open in new tab
-            closeModal();
-            // Reset form
-            leadForm.reset();
-            submitBtn.disabled = false;
-            btnText.textContent = 'Agendar Agora';
+            window.location.href = 'obrigado.html';
         }, 1000);
         
     } catch (error) {
